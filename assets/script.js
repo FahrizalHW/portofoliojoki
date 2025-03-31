@@ -1,4 +1,4 @@
-const reviewsList = document.getElementById("reviewsList");
+    const reviewsList = document.getElementById("reviewsList");
     const usernameInput = document.getElementById("username");
     const commentInput = document.getElementById("userComment");
     const submitButton = document.getElementById("submitReview");
@@ -39,9 +39,16 @@ const reviewsList = document.getElementById("reviewsList");
     
     
     document.getElementById('menu-toggle').addEventListener('click', function() {
+        console.log('Menu toggle clicked'); // Tambahkan log ini
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenu.classList.toggle('hidden');
+        console.log('Hidden class toggled: ', !mobileMenu.classList.contains('hidden')); // Log status
     });
+
+    function toggleMenu() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    }
 
     document.getElementById('orderForm').addEventListener('submit', function(event) {
         event.preventDefault();
