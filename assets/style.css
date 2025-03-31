@@ -1,0 +1,85 @@
+
+/* Stars background effect */
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)), 
+                      radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)), 
+                      radial-gradient(1px 1px at 90px 40px, #fff, rgba(0,0,0,0)),
+                      radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0)),
+                      radial-gradient(1px 1px at 200px 80px, #fff, rgba(0,0,0,0)),
+                      radial-gradient(2px 2px at 260px 30px, #fff, rgba(0,0,0,0)),
+                      radial-gradient(1px 1px at 300px 50px, #eee, rgba(0,0,0,0)),
+                      radial-gradient(2px 2px at 350px 100px, #fff, rgba(0,0,0,0)),
+                      radial-gradient(1px 1px at 400px 30px, #ddd, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 400px 400px;
+}
+
+.stars-small {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(1px 1px at 10px 10px, #eee, rgba(0,0,0,0)), 
+                    radial-gradient(1px 1px at 20px 30px, #fff, rgba(0,0,0,0)), 
+                    radial-gradient(1px 1px at 30px 50px, #ddd, rgba(0,0,0,0)),
+                    radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)),
+                    radial-gradient(1px 1px at 50px 90px, #ddd, rgba(0,0,0,0)),
+                    radial-gradient(1px 1px at 60px 110px, #fff, rgba(0,0,0,0)),
+                    radial-gradient(1px 1px at 70px 130px, #ddd, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+}
+
+.portfolio-item {
+background-color: #1a202c; /* bg-gray-900 */
+border-radius: 0.5rem; /* rounded-lg */
+overflow: hidden;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+border: 1px solid #4a5568; /* border-gray-700 */
+transition: border-color 0.3s;
+}
+
+.portfolio-item:hover {
+border-color: #6366f1; /* hover:border-indigo-500 */
+}
+
+.portfolio-image {
+width: 100%;
+height: 16rem; /* h-64 */
+object-fit: cover;
+object-position: center;
+}
+
+.portfolio-content {
+padding: 1.5rem; /* p-6 */
+}
+
+.portfolio-title {
+font-size: 1.25rem; /* text-xl */
+font-weight: 600; /* font-semibold */
+margin-bottom: 0.5rem; /* mb-2 */
+color: white; /* text-white */
+}
+
+.portfolio-desc {
+color: #a0aec0; /* text-gray-400 */
+margin-bottom: 1rem; /* mb-4 */
+}
+
+.tech-stack span {
+background-color: #4338ca; /* bg-indigo-900 */
+color: #c3dafe; /* text-indigo-200 */
+font-size: 0.75rem; /* text-xs */
+padding: 0.25rem 0.75rem; /* px-3 py-1 */
+border-radius: 9999px; /* rounded-full */
+display: inline-block;
+margin-right: 0.5rem; /* mr-2 */
+margin-bottom: 0.5rem; /* mb-2 */
+}
+

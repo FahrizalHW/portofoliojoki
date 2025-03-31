@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio & Jasa Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="bg-gray-900 font-sans text-gray-200">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 bg-opacity-90 shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-semibold text-indigo-300">MyPortfolio</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-gray-300 hover:text-indigo-400 transition">Tentang</a>
+                    <a href="#portfolio" class="text-gray-300 hover:text-indigo-400 transition">Portofolio</a>
+                    <a href="#services" class="text-gray-300 hover:text-indigo-400 transition">Jasa</a>
+                </div>
+                <button class="md:hidden text-gray-300 focus:outline-none" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-gray-800" id="mobile-menu">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-2">
+                <a href="#about" class="text-gray-300 py-2 hover:text-indigo-400 transition">Tentang</a>
+                <a href="#portfolio" class="text-gray-300 py-2 hover:text-indigo-400 transition">Portofolio</a>
+                <a href="#services" class="text-gray-300 py-2 hover:text-indigo-400 transition">Jasa</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="py-16 bg-gradient-to-r from-gray-900 to-indigo-900 relative overflow-hidden">
+        <!-- Stars background -->
+        <div class="absolute inset-0 opacity-30">
+            <div class="stars"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl font-bold text-white mb-4">Halo, Saya <span class="text-indigo-400">Fahrizal H.W</span></h1>
+                    <p class="text-gray-300 text-lg mb-6">Web Developer dan UI/UX Designer dengan pengalaman membuat website yang elegan dan fungsional.</p>
+                    <a href="#services" class="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition shadow-lg">Pesan Jasa</a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="assets/img/fotosaya.jpg" alt="Profile" class="rounded-full w-64 h-64 shadow-lg border-4 border-indigo-900">           
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Description Section -->
+    <section class="py-16 bg-gray-900 relative">
+        <!-- Decoration elements -->
+        <div class="absolute top-10 left-10 w-24 h-24 rounded-full bg-indigo-900 opacity-10 blur-lg"></div>
+        <div class="absolute bottom-10 right-10 w-20 h-20 rounded-full bg-purple-900 opacity-10 blur-lg"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8 text-white">Tentang Saya & Website Ini</h2>
+                
+                <div class="bg-gray-800 rounded-lg p-8 shadow-lg border border-gray-700">
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <div class="md:w-1/3">
+                            <div class="rounded-lg overflow-hidden mb-4">
+                                <img src="https://i.pinimg.com/736x/f9/47/bf/f947bfbb294cff3ab27d78b0c059870d.jpg" alt="Working on projects" class="w-full h-auto">
+                            </div>
+                            <div class="grid grid-cols-3 gap-4 justify-center">
+                                <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                                <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm">Tailwind</span>
+                                <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                                <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm">PHP</span>
+                                <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm">Laravel</span>
+                                <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm">Python</span>
+                                <span class="bg-indigo-900 text-indigo-200 px-3 py-1 rounded-full text-sm">Vue.js</span>
+                            </div>                            
+                        </div>
+                        <div class="md:w-2/3">
+                            <p class="text-gray-300 mb-4">
+                                Saya adalah lulusan SMK jurusan Rekayasa Perangkat Lunak (RPL) yang baru saja melanjutkan studi di bidang Informatika. Dengan pengalaman dalam berbagai bahasa pemrograman selama di SMK, saya membangun website ini sebagai portofolio sekaligus menawarkan jasa pembuatan website.
+                            </p>
+                            <p class="text-gray-300 mb-4">
+                                Website ini bertujuan untuk memperkenalkan keterampilan saya dalam pengembangan web serta membantu mahasiswa, profesional, dan pemilik bisnis kecil yang membutuhkan website berkualitas dengan harga terjangkau.
+                            </p>
+                            <p class="text-gray-300">
+                                Dengan keahlian yang saya miliki, saya siap membantu Anda mewujudkan website impian, baik untuk keperluan tugas kuliah, profil profesional, maupun bisnis. Silakan jelajahi portofolio saya dan jangan ragu untuk menghubungi saya untuk diskusi lebih lanjut.
+                            </p>                            
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                        <div class="bg-gray-900 p-4 rounded-lg text-center border border-gray-700">
+                            <div class="text-indigo-400 text-3xl mb-2">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Pengalaman</h3>
+                            <p class="text-gray-400">3+ tahun di bidang pengembangan web dan desain UI/UX</p>
+                        </div>
+                        <div class="bg-gray-900 p-4 rounded-lg text-center border border-gray-700">
+                            <div class="text-indigo-400 text-3xl mb-2">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Projek</h3>
+                            <p class="text-gray-400">15+ website selesai untuk pembelajaran maupun klien</p>
+                            <a href="https://github.com/FahrizalHW" target="_blank" class="text-indigo-400 hover:underline mt-2 block">
+                                Lihat di GitHub
+                            </a>
+                        </div>                        
+                        <div class="bg-gray-900 p-4 rounded-lg text-center border border-gray-700">
+                            <div class="text-indigo-400 text-3xl mb-2">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Pendidikan</h3>
+                            <p class="text-gray-400">Prodi Teknik Informatika dengan spesialisasi web development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-16 bg-gray-800 relative">
+    <!-- Decorative Elements -->
+    <div class="absolute top-20 right-10 w-32 h-32 rounded-full bg-indigo-900 opacity-30 blur-lg"></div>
+    <div class="absolute bottom-20 left-10 w-40 h-40 rounded-full bg-purple-900 opacity-20 blur-lg"></div>
+
+    <div class="container mx-auto px-4 relative z-10">
+        <h2 class="text-3xl font-bold text-center mb-12 text-white">Portofolio Saya</h2>
+
+        <!-- Portfolio Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Portfolio Items -->
+            <div class="portfolio-item">
+                <img src="https://i.pinimg.com/736x/ea/36/02/ea3602f22c0df7b1317456f7584459ef.jpg" alt="Project 1" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">E-Commerce Website</h3>
+                    <p class="portfolio-desc">Website e-commerce lengkap dengan sistem pembayaran dan inventori.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://i.pinimg.com/736x/a6/f8/77/a6f877be92370f400bef76f5f16c720e.jpg" alt="Project 2" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Dashboard Admin</h3>
+                    <p class="portfolio-desc">Dashboard admin dengan visualisasi data dan manajemen pengguna.</p>
+                    <div class="tech-stack">
+                        <span>Angular</span>
+                        <span>Firebase</span>
+                        <span>Chart.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://i.pinimg.com/736x/c4/47/fb/c447fbb5a824878ab54792143cbe5384.jpg" alt="Project 3" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Aplikasi Mobile</h3>
+                    <p class="portfolio-desc">Aplikasi manajemen tugas kampus dengan notifikasi dan kalender.</p>
+                    <div class="tech-stack">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-800 relative">
+        <!-- Stars effect -->
+        <div class="absolute inset-0 opacity-20">
+            <div class="stars-small"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-3xl font-bold text-center mb-12 text-white">Jasa Website</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Service 1 -->
+                <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-indigo-900/30 transition border border-gray-700 hover:border-indigo-500 duration-300 text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-indigo-900 rounded-full flex items-center justify-center">
+                        <i class="fas fa-laptop-code text-indigo-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Website Statis</h3>
+                    <p class="text-gray-400 mb-4">Website landing page atau portofolio sederhana dengan desain yang elegan.</p>
+                    <p class="font-semibold text-indigo-400">Mulai dari Rp 500.000</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-indigo-900/30 transition border border-gray-700 hover:border-indigo-500 duration-300 text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-indigo-900 rounded-full flex items-center justify-center">
+                        <i class="fas fa-shopping-cart text-indigo-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Website Dinamis</h3>
+                    <p class="text-gray-400 mb-4">Website dengan fitur login, dashboard admin, dan interaksi pengguna.</p>
+                    <p class="font-semibold text-indigo-400">Mulai dari Rp 1.500.000</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-900 rounded-lg p-6 shadow-lg hover:shadow-indigo-900/30 transition border border-gray-700 hover:border-indigo-500 duration-300 text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-indigo-900 rounded-full flex items-center justify-center">
+                        <i class="fas fa-mobile-alt text-indigo-300 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Tugas Kuliah</h3>
+                    <p class="text-gray-400 mb-4">Jasa pembuatan projek website atau aplikasi untuk tugas kuliah.</p>
+                    <p class="font-semibold text-indigo-400">Mulai dari Rp 300.000</p>
+                </div>
+            </div>
+            
+            <!-- Order Form -->
+            <div class="max-w-2xl mx-auto bg-gray-900 p-8 rounded-lg shadow-lg border border-indigo-900">
+                <h3 class="text-2xl font-semibold mb-6 text-white text-center">Buat Pesanan</h3>
+                <form id="orderForm">
+                    <div class="mb-4">
+                        <label class="block text-gray-300 mb-2" for="name">Nama Lengkap:</label>
+                        <input type="text" id="name" class="w-full p-3 border border-gray-600 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" required>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="block text-gray-300 mb-2" for="email">Email:</label>
+                        <input type="email" id="email" class="w-full p-3 border border-gray-600 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" required>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="block text-gray-300 mb-2" for="service">Jenis Jasa:</label>
+                        <select id="service" class="w-full p-3 border border-gray-600 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" required>
+                            <option value="">Pilih Jasa</option>
+                            <option value="static">Website Statis</option>
+                            <option value="dynamic">Website Dinamis</option>
+                            <option value="assignment">Tugas Kuliah</option>
+                            <option value="other">Lainnya</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label class="block text-gray-300 mb-2" for="orderDetails">Deskripsi Kebutuhan:</label>
+                        <textarea id="orderDetails" rows="5" class="w-full p-3 border border-gray-600 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-md hover:bg-indigo-700 transition shadow-lg">Kirim ke WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-2 text-indigo-300">MyPortfolio</h3>
+                    <p class="text-gray-400">Solusi website untuk mahasiswa dan profesional.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/rzlwinata/" target="_blank" rel="noopener noreferrer" 
+                        class="h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/6285212836306" target="_blank" rel="noopener noreferrer" 
+                        class="h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://github.com/FahrizalHW" target="_blank" rel="noopener noreferrer" 
+                        class="h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-6 pt-6 text-center text-gray-400">
+                <p>© 2025 MyPortfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
