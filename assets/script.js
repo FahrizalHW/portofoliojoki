@@ -86,21 +86,3 @@
             window.open(whatsappURL, '_blank');
     });
 
-    document.querySelectorAll('.faq-toggle').forEach(button => {
-        button.addEventListener('click', function () {
-            const content = this.nextElementSibling;
-            const icon = this.querySelector('.icon');
-
-            if (content.classList.contains('hidden')) {
-                document.querySelectorAll('.faq-content').forEach(item => item.classList.add('hidden'));
-                document.querySelectorAll('.icon').forEach(item => item.textContent = '+');
-                
-                content.classList.remove('hidden');
-                icon.textContent = '-';
-            } else {
-                content.classList.add('hidden');
-                icon.textContent = '+';
-            }
-        });
-    });
-    

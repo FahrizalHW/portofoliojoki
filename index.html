@@ -277,7 +277,7 @@
                         Kami menyediakan jasa pembuatan website statis, dinamis, serta bantuan tugas kuliah.
                     </div>
                 </div>
-    
+
                 <!-- Pertanyaan 2 -->
                 <div class="border border-gray-700 rounded-lg">
                     <button class="faq-toggle flex justify-between w-full p-4 text-left font-semibold bg-gray-800 hover:bg-gray-700">
@@ -288,7 +288,7 @@
                         Tergantung kompleksitas proyek, biasanya berkisar antara 3-14 hari kerja.
                     </div>
                 </div>
-    
+
                 <!-- Pertanyaan 3 -->
                 <div class="border border-gray-700 rounded-lg">
                     <button class="faq-toggle flex justify-between w-full p-4 text-left font-semibold bg-gray-800 hover:bg-gray-700">
@@ -302,6 +302,28 @@
             </div>
         </div>
     </section>
+    <script>
+        // Pastikan script dijalankan setelah DOM sepenuhnya dimuat
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.faq-toggle').forEach(button => {
+                button.addEventListener('click', function () {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('.icon');
+    
+                    if (content.classList.contains('hidden')) {
+                        document.querySelectorAll('.faq-content').forEach(item => item.classList.add('hidden'));
+                        document.querySelectorAll('.icon').forEach(item => item.textContent = '+');
+                        
+                        content.classList.remove('hidden');
+                        icon.textContent = '-';
+                    } else {
+                        content.classList.add('hidden');
+                        icon.textContent = '+';
+                    }
+                });
+            });
+        });
+    </script>
 
     <!-- Comment Section -->
     <section id="reviews" class="py-16 bg-gray-900 text-white">
